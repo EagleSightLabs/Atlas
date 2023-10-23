@@ -1,0 +1,18 @@
+/* Hide the menu by default on mobile */
+.md:hidden .hidden {
+    display: none;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Show the menu when the state is toggled */
+.md:hidden .block {
+    display: block;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Always show the menu on larger screens */
+@media (min-width: 768px) {
+    .hidden, .block {
+        display: block !important;
+    }
+}
